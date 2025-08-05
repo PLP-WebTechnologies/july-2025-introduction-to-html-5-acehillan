@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Accessible & SEO-Friendly Web Page</title>
+    <meta name="description" content="A simple, well-structured web page built with HTML5 semantic tags, focusing on accessibility and basic SEO principles for beginners.">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header, main, footer, nav, article, section, aside {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            background-color: #0056b3;
+            color: #fff;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Semantic Web Page</h1>
+        <p>Your guide to building accessible and SEO-friendly websites.</p>
+        
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-us">
+            <h2>About This Project</h2>
+            <p>This project demonstrates the use of HTML5 semantic tags to create a well-structured and meaningful web page. By using tags like `<header>`, `<main>`, `<article>`, and `<footer>`, we provide clear context to both browsers and assistive technologies like screen readers.</p>
+            
+            <figure>
+                <img src="https://via.placeholder.com/600x400" alt="A placeholder image representing good web design principles." loading="lazy">
+                <figcaption>A visual representation of a clean and structured web page layout.</figcaption>
+            </figure>
+            
+            <p>Accessibility is a core focus, ensuring the content is usable by everyone, regardless of disability. Key practices include using semantic tags, providing descriptive `alt` text for images, and structuring content with logical headings.</p>
+        </section>
+
+        <article id="services">
+            <h2>Our Services</h2>
+            <p>We specialize in modern web development practices, including:</p>
+            <ul>
+                <li><strong>HTML5 Semantic Markup:</strong> Building the foundation of the web with meaningful tags.</li>
+                <li><strong>Web Accessibility (WCAG):</strong> Making sure your site is usable for all audiences.</li>
+                <li><strong>Search Engine Optimization (SEO):</strong> Helping your site get discovered by search engines.</li>
+            </ul>
+        </article>
+        
+        <aside aria-labelledby="related-info-heading">
+            <h3 id="related-info-heading">Related Resources</h3>
+            <p>Check out these links to learn more about web development:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantic_HTML" target="_blank">MDN on Semantic HTML</a></li>
+                <li><a href="https://web.dev/learn/accessibility/" target="_blank">web.dev Learn Accessibility</a></li>
+            </ul>
+        </aside>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Semantic Web Page. All Rights Reserved.</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+
+</body>
+</html>
